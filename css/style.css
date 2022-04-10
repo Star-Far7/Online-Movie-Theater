@@ -428,8 +428,8 @@ input {
 }
 
 .button-play__wrap.small-plus{
-	width: 1.8rem;
-	height: 1.8rem;
+	width: 2rem;
+	height: 2rem;
 	left: 2.35rem;
 }
 .button-play__wrap.small-plus .button-play{
@@ -466,6 +466,173 @@ input {
 	margin-right: 0.4rem;
 	width: 1.5rem;
 	height: 1.5rem;
+}
+
+.aside{
+	padding-right: 5.9rem;
+}
+
+.aside__title{
+	margin-bottom: 2.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.aside__header{
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 115%;
+}
+
+.aside__sort{
+	display: flex;
+	align-items: center;
+}
+.aside__sort-text{
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 114%;
+	
+	color: rgba(255, 255, 255, 0.4);
+}
+.aside__sort-select{
+	margin-left: 1.5rem;
+
+	display: flex;
+	align-items: center;
+
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 114%;
+}
+
+.aside__sort-img{
+	height: 2rem;
+	margin-left: .4rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.aside__sort-img img{
+	width: .75rem;
+	height: .75rem;
+}
+
+.aside__item{
+	width: 100%;
+	height: 22.6rem;
+	padding: 1.9rem;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: space-between;
+
+	background: url(../img/aside-back.jpg);
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 1.5rem;
+
+	z-index: 1;
+	overflow: hidden;
+}
+.aside__item::before{
+	content: '';
+	position: absolute;
+	display: block;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: -1;
+}
+.aside__item:nth-child(3){
+	margin-top: 3rem;
+	margin-bottom: 4rem;
+}
+
+.aside__views{
+	font-weight: 700;
+	font-size: 1.6rem;
+	line-height: 119%;
+}
+.aside__footer-name{
+	font-weight: 700;
+	font-size: 2.4rem;
+	line-height: 150%;
+}
+.aside__footer-date{
+	font-weight: 700;
+	font-size: 1.4rem;
+	line-height: 114%;
+}
+
+.aside__bottom{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 30rem;
+	padding: 2.5rem 0 2rem 2.5rem;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.aside__favourite-text{
+	margin-bottom: 2rem;
+
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 115%;
+}
+
+.aside__genre-items{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	padding-right: 5rem;
+}
+.aside__genre{
+	margin-bottom: 2rem;
+	margin-right: 3rem;
+	padding: .5rem 1rem;
+	border-radius: 3rem;
+
+	font-weight: 400;
+	font-size: 1.2rem;
+	line-height: 117%;
+}
+.perple{
+	background: #8066F6;
+}
+.orange{
+	background: #E1784F;
+}
+.green{
+	background: #63CFE1;
+}
+.gray{
+	background: #2B2A2F
+}
+
+.aside__line{
+	width: 6.5rem;
+	margin: 0;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.aside__add{
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 114%;
+	margin-bottom: 2.1rem;
+}
+.aside__add::before{
+	content: '+';
+	padding: 0 0.5rem;
+	margin-right: 0.5rem;
+	background: #2B2A2F;
+	border-radius: 50%;
 }
 
 /* Сетка */

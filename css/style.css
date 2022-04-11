@@ -80,6 +80,7 @@ input {
 
 .header {
 	grid-area: my-header;
+	box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.07);
 }
 
 .aside {
@@ -97,7 +98,7 @@ input {
 		"my-aside my-main my-main"
 		"my-aside my-main my-main";
 	grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-	gap: 8rem 0;
+	gap: 3rem 0;
 }
 
 .grid-init {
@@ -174,6 +175,10 @@ input {
 	width: 6rem;
 	height: 6rem;
 	border-radius: 50%;
+}
+
+.main-display{
+	padding-top: 5rem;
 }
 
 .main-display__trailer{
@@ -470,6 +475,35 @@ input {
 
 .aside{
 	padding-right: 5.9rem;
+	position: relative;
+}
+.aside::after{
+	content: url(../img/aside-play.svg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 2.2rem;
+	height: 2.6rem;
+	background: #FCFCFE;
+	border-radius: 2rem;
+	cursor: pointer;
+
+	position: absolute;
+	top: 10.7rem;
+	right: 5rem;
+	z-index: 1;
+}
+
+.aside__wrap{
+	background: rgba(255, 255, 255, .02);
+	margin-left: -2.4rem;
+}
+
+.aside__top{
+	padding: 5rem 2.3rem 4rem 2.4rem;
+	background: #17161b;
+	border-right: .1rem solid #1C1B1F;
 }
 
 .aside__title{
@@ -550,7 +584,6 @@ input {
 }
 .aside__item:nth-child(3){
 	margin-top: 3rem;
-	margin-bottom: 4rem;
 }
 
 .aside__views{
@@ -574,8 +607,7 @@ input {
 	flex-direction: column;
 	justify-content: space-between;
 	height: 30rem;
-	padding: 2.5rem 0 2rem 2.5rem;
-	background: rgba(255, 255, 255, 0.02);
+	padding: 2.5rem 0 2rem 2.4rem;
 }
 
 .aside__favourite-text{
@@ -634,6 +666,31 @@ input {
 	background: #2B2A2F;
 	border-radius: 50%;
 }
+
+.modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow-x: hidden;
+	overflow-y: auto;
+	z-index: 999;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 3rem 0;
+	display: none;
+}
+.modal__inner{
+	width: 100rem;
+	height: 60rem;
+}
+.active{
+	display: flex;
+}
+
 
 /* Сетка */
 
